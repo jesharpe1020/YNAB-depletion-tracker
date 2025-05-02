@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YNAB Depletion Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>YNAB Depletion Tracker</h1>
+
+  <section>
+    <label for="savings">Total Savings: $</label>
+    <input type="number" id="savings"  placeholder="Savings"/>
+  </section>
+
+  <section>
+    <h2>Rough Weekly Income</h2>
+    <input type="number" id="rough-income" placeholder="Income" />
+  </section>
+
+  <section>
+    <h2>Rough Monthly Expenses</h2>
+    <input type="number" id="expense-total" placeholder="Expenses" />
+  </section>
+
+  <section>
+    <h2>Depletion Estimate</h2>
+    <p id="runway-output">Enter data above to see result.</p>
+    <p id="burn-rate-output"></p>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
